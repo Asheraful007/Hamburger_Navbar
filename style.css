@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Caveat:wght@600&family=Inconsolata:wght@300&family=Josefin+Sans:ital,wght@0,400;1,500&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+#manu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0px 20px 20px;
+    z-index: 100;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(108, 5, 5);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+
+
+.nav{
+    padding: 0px;
+    margin: 0px;
+    transition: 1s ease;
+    display: none;
+}
+.nav li{
+    list-style: none;
+    padding: 16px 0px;
+    font-size: 34px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.nav li a:hover{
+    border: 1px solid white;
+    padding: 10px 40px;
+}
+
+.icon .bar{
+    background-color: white;
+}
+.icon #bar1{
+    transform: translateY(4px)rotate(-45deg);
+}
+.icon #bar2{
+    opacity: 0;
+}
+.icon #bar3{
+    transform: translateY(-6px)rotate(45deg);
+}
+.change{
+    background-color:crimson;
+    height: 100vh;
+    margin: 0px;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: -100;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .change{
+        width:40%
+    }
+}
+@media only screen and (max-width: 500px) {
+    .change{
+        width:100%
+    }
+}
